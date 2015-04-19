@@ -4,6 +4,8 @@
 #include "EditorStyle.h"
 #include "PluginCreatorStyle.h"
 
+#define LOCTEXT_NAMESPACE "PluginCreator"
+
 class FPluginCreatorCommands : public TCommands<FPluginCreatorCommands>
 {
 public:
@@ -21,3 +23,5 @@ public:
 	TSharedPtr< FUICommandInfo > OpenPluginCreator;
 
 };
+
+#undef LOCTEXT_NAMESPACE
